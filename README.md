@@ -1,2 +1,2 @@
-# Angular_Spotify
+# Angular_Spotify 🎵
 Web assignment
