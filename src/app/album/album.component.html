@@ -22,11 +22,10 @@
         <strong>Tracks:</strong> {{ album.total_tracks }}<br />
         <strong>Popularity: </strong>{{ album.popularity }}<br /><br />
 
-        <mat-chip-list
-          aria-label="Artist selection"
-          *ngFor="let artist of album.artists"
-        >
-          <a routerLink="/artist/{{ artist.id }}"
+        <mat-chip-list aria-label="Artist selection">
+          <a
+            routerLink="/artist/{{ artist.id }}"
+            *ngFor="let artist of album.artists"
             ><mat-chip routerLink="/artist/{{ artist.id }}">{{
               artist.name
             }}</mat-chip></a
